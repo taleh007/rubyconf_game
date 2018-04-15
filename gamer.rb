@@ -67,7 +67,7 @@ class Gamer
     scope = @tasks.where(title: title)
 
     if (one_scope = scope.where(left: left, right: right).or(left: right, right: left)).count.positive?
-      answer = one_scope.last[:answer]
+      answer = one_scope.all.last[:answer]
       puts "From gamer info --> already have that task"
     elsif (answer = @@mega_db.compare(title, left, right))
       puts "From gamer info --> mega_db choose answer"
