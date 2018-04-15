@@ -1,0 +1,91 @@
+4 programming paradigms in 45 minutes
+a history of bundles-2010 to 2017
+a look at hooks
+a new pair of shoes
+am i senior yet grow your career by teaching your peers
+attention rubyists-you can write video games
+augmenting human decision making with data science
+better code through boring er tests
+bootcamp grads have feelings too
+building a better openstruct
+building a compacting gc for mri
+building hal-running ruby with your voice
+building maintainable command-line tools with mruby
+buuuuugs iiiiin spaaaaace
+c ruby c ruby go go ruby go
+code reviews - honesty kindness inspiration - pick three
+compiling ruby
+composition
+computer science-the good parts
+continuing education at work
+datacenter fires and other minor disasters
+deletion driven development-code to delete code
+deterministic solutions to intermittent failures
+dispelling the dark magic-inside a ruby debugger
+diving into the details with dtrace
+even the justice league works remotely
+finding beauty in the mundane
+finding responsibility
+finding your edge through a culture of feedback
+from no oss experience to the core team in 15 minutes a day
+get off the tightrope
+getting unstuck-using the scientific method for debugging
+git driven refactoring
+great expectations - power-charging apprenticeship programs
+grow your team in 90 days
+growing old
+halve your memory usage with these 12 weird tricks
+hello gmom-addressing loneliness in end-of-life care
+high cost tests and high value tests
+how i corrupted survey results and maybe ruined a business
+how i learned to stop worrying and love unit testing
+how i taught my dog to text selfies
+how to build a world-class rock paper scissors bot
+how to load 1m lines of ruby in 5s
+human errors
+implementing virtual machines in ruby and c
+improving coverage analysis
+improving truffleruby s startup time with the substratevm
+it s more fun to compute
+jruby everywhere server client and embedded
+just a ruby minute
+just when you thought you couldn t refactor any more
+keyword args the killer ruby feature you aren t using
+leadership starts with listening-amplify your impact
+learning fluency
+lending privilege
+lies
+llvm-based jit compiler for mri
+matz q a
+metaprogramming not good enough
+methods of memory management in mri
+my meta moments
+opening keynote
+orbital rocket guidance with ruby
+packing your ruby application into a single executable
+problem solved using logic programming to find answers
+rainbows color theory for computers
+rewriting rack-a functional approach
+rhythmic recursion
+rspec no longer works with activerecord
+rub berduck yconf i -mustache-you a question
+ruby for home-ec
+ruby red pandas and you
+ruby s c extension problem and how we re solving it
+ruby versus the titans of fp
+rubyik s cube
+running global manufacturing on ruby among other things
+saving ruby from the apocalypse
+set design-putting the art in architecture
+so you want to become a software engineer
+steal this talk-the best features ruby doesn t have yet
+that time i used ruby to crack my reddit password
+the good bad bug - fail your way to better code
+the overnight failure
+the unbearable vulnerability of open source
+there are no rules in ruby
+types and ruby programming language
+what does gil really guarantee you
+writing inclusively about technology topics
+y2k and other disappointing disasters-how to create fizzle
+you re insufficiently persuasive
