@@ -1,0 +1,92 @@
+4 programming paradigms in 45 minutes	-->	Aja Hammerly
+a history of bundles-2010 to 2017	-->	Andre Arko
+a look at hooks	-->	Craig Buchek
+a new pair of shoes	-->	Jason R. Calrk
+am i senior yet grow your career by teaching your peers	-->	Katlyn Parvin
+attention rubyists-you can write video games	-->	Cory Chamblin
+augmenting human decision making with data science	-->	Kelsey Pedersen
+better code through boring er tests	-->	Betsy Haibel
+bootcamp grads have feelings too	-->	Megan Tiu
+building a better openstruct	-->	Ariel Caplan
+building a compacting gc for mri	-->	Aaron Patterson
+building hal-running ruby with your voice	-->	Jonan Scheffler
+building maintainable command-line tools with mruby	-->	Eric Hodel
+buuuuugs iiiiin spaaaaace	-->	Colin Fulton
+c ruby c ruby go go ruby go	-->	Loren Segal
+code reviews - honesty kindness inspiration - pick three	-->	Jacob Stoebel
+compiling ruby	-->	Kevin Deisz
+composition	-->	James Dabbs
+computer science-the good parts	-->	Jeffrey Cohen
+continuing education at work	-->	Katherine Wu
+datacenter fires and other minor disasters	-->	Aja Hammerly
+deletion driven development-code to delete code	-->	Chris Arcand
+deterministic solutions to intermittent failures	-->	Tim Mertens
+dispelling the dark magic-inside a ruby debugger	-->	Daniel Azuma
+diving into the details with dtrace	-->	Colin Jones
+even the justice league works remotely	-->	Allison McMillan
+finding beauty in the mundane	-->	Megan Tiu
+finding responsibility	-->	Caleb Thompson
+finding your edge through a culture of feedback	-->	Paulette Luftig
+from no oss experience to the core team in 15 minutes a day	-->	Andre Arko
+get off the tightrope	-->	Tom Stuart
+getting unstuck-using the scientific method for debugging	-->	Caroline Taymor
+git driven refactoring	-->	Ashley Ellis Pierce
+great expectations - power-charging apprenticeship programs	-->	Louisa Barrett
+grow your team in 90 days	-->	Cheryl Gore Schaefer
+growing old	-->	Chad Fowler
+halve your memory usage with these 12 weird tricks	-->	Nate Berkopec
+hello gmom-addressing loneliness in end-of-life care	-->	Jeremy Flores
+high cost tests and high value tests	-->	Noel Rappin
+how i corrupted survey results and maybe ruined a business	-->	Mike Calhoun
+how i learned to stop worrying and love unit testing	-->	Valerie Woolard Srinivasan
+how i taught my dog to text selfies	-->	Greg Baugues
+how to build a world-class rock paper scissors bot	-->	Dorothy Jane Wingrove
+how to load 1m lines of ruby in 5s	-->	Andrew Metcalf
+human errors	-->	Olivier Lacan
+implementing virtual machines in ruby and c	-->	Eleanor McHugh
+improving coverage analysis	-->	Ryan Davis
+improving truffleruby s startup time with the substratevm	-->	Kevin Menard
+it s more fun to compute	-->	Julian Cheal
+jruby everywhere server client and embedded	-->	Thomas Enebo
+just a ruby minute	-->	Andrew Faraday
+just when you thought you couldn t refactor any more	-->	Claudio B
+keyword args the killer ruby feature you aren t using	-->	Guyren G. Howe
+leadership starts with listening-amplify your impact	-->	Heidi Helfand
+learning fluency	-->	Sara Simon
+lending privilege	-->	Anjuan Simmons
+lies	-->	Ernie Miller
+llvm-based jit compiler for mri	-->	Takashi Kokubun
+matz q a	-->	Yukihiro Matz Matsumoto
+metaprogramming not good enough	-->	Justin Weiss
+methods of memory management in mri	-->	Aaron Patterson
+my meta moments	-->	John Dewyze
+opening keynote	-->	Yukihiro Matz Matsumoto
+orbital rocket guidance with ruby	-->	Nate Berkopec
+packing your ruby application into a single executable	-->	Minqi Pan
+problem solved using logic programming to find answers	-->	Gavin McGimpsey
+rainbows color theory for computers	-->	Lito Nicolai
+rewriting rack-a functional approach	-->	Alex Wheeler
+rhythmic recursion	-->	Celeen Rusk
+rspec no longer works with activerecord	-->	Sam Phippen
+rub berduck yconf i -mustache-you a question	-->	James Dabbs
+rub berduck yconf i -mustache-you a question	-->	Tara Scherner de la Fuente
+ruby for home-ec	-->	Adam Forsyth
+ruby red pandas and you	-->	Sean Marcia
+ruby s c extension problem and how we re solving it	-->	Chris Seaton
+ruby versus the titans of fp	-->	Cassandra Cruz
+rubyik s cube	-->	Stafford Brunk
+running global manufacturing on ruby among other things	-->	Lee Edwards
+saving ruby from the apocalypse	-->	Jason Charnes
+set design-putting the art in architecture	-->	Betsy Haibel
+so you want to become a software engineer	-->	Shana Moore
+steal this talk-the best features ruby doesn t have yet	-->	John Feminella
+that time i used ruby to crack my reddit password	-->	Haseeb Qureshi
+the good bad bug - fail your way to better code	-->	Jessica Rudder
+the overnight failure	-->	Sebastian Sogamoso
+the unbearable vulnerability of open source	-->	Eileen M Uchitelle
+there are no rules in ruby	-->	Max Jacobson
+types and ruby programming language	-->	Soutaro Matsumoto
+what does gil really guarantee you	-->	Daniel Vartanov
+writing inclusively about technology topics	-->	Thursday Bram
+y2k and other disappointing disasters-how to create fizzle	-->	Heidi Waterhouse
+you re insufficiently persuasive	-->	Sandi Metz
