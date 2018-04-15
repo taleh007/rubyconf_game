@@ -1,0 +1,272 @@
+4 programming paradigms in 45 minutes	-->	Aja Hammerly
+https://www.youtube.com/watch?v=3TBq__oKUzk
+
+a history of bundles-2010 to 2017	-->	Andre Arko
+https://www.youtube.com/watch?v=BXFYjO8qDxk
+
+a look at hooks	-->	Craig Buchek
+https://www.youtube.com/watch?v=x7F4kkdKQbQ
+
+a new pair of shoes	-->	Jason R. Calrk
+https://www.youtube.com/watch?v=EjN2ep1T6M8
+
+am i senior yet grow your career by teaching your peers	-->	Katlyn Parvin
+https://www.youtube.com/watch?v=jcTmoOHhG9A
+
+attention rubyists-you can write video games	-->	Cory Chamblin
+https://www.youtube.com/watch?v=bK9RX_CzCeI
+
+augmenting human decision making with data science	-->	Kelsey Pedersen
+https://www.youtube.com/watch?v=mUcamCBDNcg
+
+better code through boring er tests	-->	Betsy Haibel
+https://www.youtube.com/watch?v=tTQpD3o_FAw
+
+bootcamp grads have feelings too	-->	Megan Tiu
+https://www.youtube.com/watch?v=133HhIjmfRE
+
+building a better openstruct	-->	Ariel Caplan
+https://www.youtube.com/watch?v=2IbJFCbBnQk
+
+building a compacting gc for mri	-->	Aaron Patterson
+https://www.youtube.com/watch?v=8Q7M513vewk
+
+building hal-running ruby with your voice	-->	Jonan Scheffler
+https://www.youtube.com/watch?v=znvpPsLBZyg
+
+building maintainable command-line tools with mruby	-->	Eric Hodel
+https://www.youtube.com/watch?v=96YgJSGaB3M
+
+buuuuugs iiiiin spaaaaace	-->	Colin Fulton
+https://www.youtube.com/watch?v=_ZdF82h_GrM
+
+c ruby c ruby go go ruby go	-->	Loren Segal
+https://www.youtube.com/watch?v=V1ZMQjm9I50
+
+code reviews - honesty kindness inspiration - pick three	-->	Jacob Stoebel
+https://www.youtube.com/watch?v=hP_2XKYia9I
+
+compiling ruby	-->	Kevin Deisz
+https://www.youtube.com/watch?v=iWDOXi7Kj2o
+
+composition	-->	James Dabbs
+https://www.youtube.com/watch?v=zwo7ZTHS8Wg
+
+computer science-the good parts	-->	Jeffrey Cohen
+https://www.youtube.com/watch?v=4V2kwMSDEsE
+
+continuing education at work	-->	Katherine Wu
+https://www.youtube.com/watch?v=9uRho69xSAI
+
+datacenter fires and other minor disasters	-->	Aja Hammerly
+https://www.youtube.com/watch?v=ygu45C7bMHk
+
+deletion driven development-code to delete code	-->	Chris Arcand
+https://www.youtube.com/watch?v=OfiIyNV00uI
+
+deterministic solutions to intermittent failures	-->	Tim Mertens
+https://www.youtube.com/watch?v=JH9vugpPNyw
+
+dispelling the dark magic-inside a ruby debugger	-->	Daniel Azuma
+https://www.youtube.com/watch?v=UsrSu4x30Vo
+
+diving into the details with dtrace	-->	Colin Jones
+https://www.youtube.com/watch?v=ZzYyl5vAWcA
+
+even the justice league works remotely	-->	Allison McMillan
+https://www.youtube.com/watch?v=d7Z0uS2x_cY
+
+finding beauty in the mundane	-->	Megan Tiu
+https://www.youtube.com/watch?v=ZRgiVRqPVL4
+
+finding responsibility	-->	Caleb Thompson
+https://www.youtube.com/watch?v=UBdBoWAtLNI
+
+finding your edge through a culture of feedback	-->	Paulette Luftig
+https://www.youtube.com/watch?v=EkLdO-SphxA
+
+from no oss experience to the core team in 15 minutes a day	-->	Andre Arko
+https://www.youtube.com/watch?v=6jUe-9Y__KM
+
+get off the tightrope	-->	Tom Stuart
+https://www.youtube.com/watch?v=TdBELZG0UMY
+
+getting unstuck-using the scientific method for debugging	-->	Caroline Taymor
+https://www.youtube.com/watch?v=spwAyEn2VXs
+
+git driven refactoring	-->	Ashley Ellis Pierce
+https://www.youtube.com/watch?v=3OgbQOsW61Y
+
+great expectations - power-charging apprenticeship programs	-->	Louisa Barrett
+https://www.youtube.com/watch?v=o-J_OhgcvWU
+
+grow your team in 90 days	-->	Cheryl Gore Schaefer
+https://www.youtube.com/watch?v=pHABlefSVZk
+
+growing old	-->	Chad Fowler
+https://www.youtube.com/watch?v=qH_y45he4-o
+
+halve your memory usage with these 12 weird tricks	-->	Nate Berkopec
+https://www.youtube.com/watch?v=kZcqyuPeDao
+
+hello gmom-addressing loneliness in end-of-life care	-->	Jeremy Flores
+https://www.youtube.com/watch?v=YLrRCmpVGw8
+
+high cost tests and high value tests	-->	Noel Rappin
+https://www.youtube.com/watch?v=IS_9cRP9OZM
+
+how i corrupted survey results and maybe ruined a business	-->	Mike Calhoun
+https://www.youtube.com/watch?v=NFkym21cl4E
+
+how i learned to stop worrying and love unit testing	-->	Valerie Woolard Srinivasan
+https://www.youtube.com/watch?v=cWneFu2EnOY
+
+how i taught my dog to text selfies	-->	Greg Baugues
+https://www.youtube.com/watch?v=7ysfTZT_-tY
+
+how to build a world-class rock paper scissors bot	-->	Dorothy Jane Wingrove
+https://www.youtube.com/watch?v=Vo3qdIBOiko
+
+how to load 1m lines of ruby in 5s	-->	Andrew Metcalf
+https://www.youtube.com/watch?v=vVFEROmdCkQ
+
+human errors	-->	Olivier Lacan
+https://www.youtube.com/watch?v=eASsqQsaNOA
+
+implementing virtual machines in ruby and c	-->	Eleanor McHugh
+https://www.youtube.com/watch?v=wN-pNr2arxI
+
+improving coverage analysis	-->	Ryan Davis
+https://www.youtube.com/watch?v=ljTO3HDw1sI
+
+improving truffleruby s startup time with the substratevm	-->	Kevin Menard
+https://www.youtube.com/watch?v=hIMldcAzd5o
+
+it s more fun to compute	-->	Julian Cheal
+https://www.youtube.com/watch?v=v3wYX-HSkr0
+
+jruby everywhere server client and embedded	-->	Thomas Enebo
+https://www.youtube.com/watch?v=Xl7LVkvSnoc
+
+just a ruby minute	-->	Andrew Faraday
+https://www.youtube.com/watch?v=1hpoyjCB2WY
+
+just when you thought you couldn t refactor any more	-->	Claudio B
+https://www.youtube.com/watch?v=nOa6FhMKsZ0
+
+keyword args the killer ruby feature you aren t using	-->	Guyren G. Howe
+https://www.youtube.com/watch?v=4e-_bbFjPRg
+
+leadership starts with listening-amplify your impact	-->	Heidi Helfand
+https://www.youtube.com/watch?v=VJxQZixy4b8
+
+learning fluency	-->	Sara Simon
+https://www.youtube.com/watch?v=AZlOjCZlPLU
+
+lending privilege	-->	Anjuan Simmons
+https://www.youtube.com/watch?v=zd4PsSk_0iQ
+
+lies	-->	Ernie Miller
+https://www.youtube.com/watch?v=Avf65oHa5vc
+
+llvm-based jit compiler for mri	-->	Takashi Kokubun
+https://www.youtube.com/watch?v=Ti4a7SXGWig
+
+matz q a	-->	Yukihiro Matz Matsumoto
+https://www.youtube.com/watch?v=1l3U1X3z0CE
+
+metaprogramming not good enough	-->	Justin Weiss
+https://www.youtube.com/watch?v=JOvBmhukWI0
+
+methods of memory management in mri	-->	Aaron Patterson
+https://www.youtube.com/watch?v=r0UjXixkBV8
+
+my meta moments	-->	John Dewyze
+https://www.youtube.com/watch?v=0OAgZBNIixU
+
+opening keynote	-->	Yukihiro Matz Matsumoto
+https://www.youtube.com/watch?v=1-A9eRzCBL0
+
+orbital rocket guidance with ruby	-->	Nate Berkopec
+https://www.youtube.com/watch?v=VMxct9B5S1A
+
+packing your ruby application into a single executable	-->	Minqi Pan
+https://www.youtube.com/watch?v=1mme7HiLqzA
+
+problem solved using logic programming to find answers	-->	Gavin McGimpsey
+https://www.youtube.com/watch?v=f5Bi6_GOIB8
+
+rainbows color theory for computers	-->	Lito Nicolai
+https://www.youtube.com/watch?v=pGGY5P9ZCUA
+
+rewriting rack-a functional approach	-->	Alex Wheeler
+https://www.youtube.com/watch?v=fVIVY7INWWQ
+
+rhythmic recursion	-->	Celeen Rusk
+https://www.youtube.com/watch?v=cSPhgRgjwZs
+
+rspec no longer works with activerecord	-->	Sam Phippen
+https://www.youtube.com/watch?v=VMcMqrpjAjU
+
+rub berduck yconf i -mustache-you a question	-->	Tara Scherner de la Fuente
+https://www.youtube.com/watch?v=onaCI461Bww
+
+ruby for home-ec	-->	Adam Forsyth
+https://www.youtube.com/watch?v=iosgoDJl8VY
+
+ruby red pandas and you	-->	Sean Marcia
+https://www.youtube.com/watch?v=jm9gEhXFUro
+
+ruby s c extension problem and how we re solving it	-->	Chris Seaton
+https://www.youtube.com/watch?v=YLtjkP9bD_U
+
+ruby versus the titans of fp	-->	Cassandra Cruz
+https://www.youtube.com/watch?v=25u-pp-7PHE
+
+rubyik s cube	-->	Stafford Brunk
+https://www.youtube.com/watch?v=NTiGuvHkPOw
+
+running global manufacturing on ruby among other things	-->	Lee Edwards
+https://www.youtube.com/watch?v=fbNfz_Npbic
+
+saving ruby from the apocalypse	-->	Jason Charnes
+https://www.youtube.com/watch?v=PiT2XEWae1c
+
+set design-putting the art in architecture	-->	Betsy Haibel
+https://www.youtube.com/watch?v=JWDPRWPtOeg
+
+so you want to become a software engineer	-->	Shana Moore
+https://www.youtube.com/watch?v=v8kAD9XTFwU
+
+steal this talk-the best features ruby doesn t have yet	-->	John Feminella
+https://www.youtube.com/watch?v=XrCU5r_NF2Q
+
+that time i used ruby to crack my reddit password	-->	Haseeb Qureshi
+https://www.youtube.com/watch?v=ywiwq9IpDEU
+
+the good bad bug - fail your way to better code	-->	Jessica Rudder
+https://www.youtube.com/watch?v=PW3Pj5o70JA
+
+the overnight failure	-->	Sebastian Sogamoso
+https://www.youtube.com/watch?v=3c_9WG_aImQ
+
+the unbearable vulnerability of open source	-->	Eileen M Uchitelle
+https://www.youtube.com/watch?v=zOB4e-1cvsU
+
+there are no rules in ruby	-->	Max Jacobson
+https://www.youtube.com/watch?v=hwFaScbQdIs
+
+types and ruby programming language	-->	Soutaro Matsumoto
+https://www.youtube.com/watch?v=Fjv9GxPXtck
+
+what does gil really guarantee you	-->	Daniel Vartanov
+https://www.youtube.com/watch?v=1nNfTWHF2YY&t=7s
+
+writing inclusively about technology topics	-->	Thursday Bram
+https://www.youtube.com/watch?v=j1aLtqcTnk0
+
+y2k and other disappointing disasters-how to create fizzle	-->	Heidi Waterhouse
+https://www.youtube.com/watch?v=ddrFcg731tg
+
+you re insufficiently persuasive	-->	Sandi Metz
+https://www.youtube.com/watch?v=VzWLGMtXflg
