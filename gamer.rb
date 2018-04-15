@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
+require_relative 'mega_db'
 
 class Gamer
-  TIME_FOR_LOADING = 1.5
+  TIME_FOR_LOADING = 3.5
 
   attr_reader :browser, :tasks, :db
 
@@ -11,8 +12,11 @@ class Gamer
     @login = login
     @password = password
     @browser = Watir::Browser.new :chrome
-    @db = Sequel.sqlite(database: 'watir.db')
-    @tasks = @db[:tasks]
+    @db_conection = Sequel.sqlite(database: 'watir.db')
+    @logger_connection = Sequel.sqlite(database: 'errors.db')
+    @errors = @logger_connection[:errors]
+    @tasks = @db_conection[:tasks]
+    @@mega_db = MegaDB.new
   end
 
   def sign_in
@@ -60,31 +64,29 @@ class Gamer
       comment_body.text.split("\n").each do |x|
         x.slice!(/(When: )|(Speaker: )/)
       end
+    scope = @tasks.where(title: title)
 
-    if (scope = @tasks.where(title: title)).count.positive?
-      answer =
-        if scope.count == 1
-          scope.first[:answer]
-        else
-          if (one_scope = scope.where(left: left, right: right).or(left: right, right: left)).count.positive?
-            one_scope.first[:answer]
-          else
-            scope.map(:answer).include?(left) ? left : right
-          end
-        end
+    if (one_scope = scope.where(left: left, right: right).or(left: right, right: left)).count.positive?
+      answer = one_scope.last[:answer]
+      puts "From gamer info --> already have that task"
+    elsif (answer = @@mega_db.compare(title, left, right))
+      puts "From gamer info --> mega_db choose answer"
+    elsif (answer = scope.map(:answer).include?(left) ? left : nil)
+      puts "From gamer info --> left variant exist in answers"
+    elsif (answer = scope.map(:answer).include?(right) ? right : nil)
+      puts "From gamer info --> right variant exist in answers"
+    end
+
+    if answer
       if right == answer.strip.downcase
         right_btn.click()
       else
         left_btn.click()
       end
     else
-      case rand(0..1)
-      when 0
-        right_btn.click()
-      when 1
-        left_btn.click()
-      end
+      rand(0..1) > 0 ? left_btn.click() : right_btn.click()
     end
+
     pause
 
     task[:title]   = title
@@ -94,7 +96,22 @@ class Gamer
     task[:right]   = right
     if answer_button.present?
       task[:answer]  = answer_button.text
-      @tasks.insert(task)
+      task_id = @tasks.insert(task)
+      if answer == task[:answer]
+        puts "From gamer info --> we WIN"
+      else
+        puts "From gamer info --> we LOSE"
+        @errors.insert({
+          title: title,
+          speaker: speaker,
+          our: answer,
+          their: answer_button.text,
+          task_id: task_id
+        })
+      end
+      puts "From gamer info --> task saved"
+    else
+      puts "From gamer info --> no answer for saving"
     end
 
     puts "From gamer info --> tasks count is #{@tasks.count}"
