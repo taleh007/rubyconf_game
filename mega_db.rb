@@ -18,7 +18,7 @@ class MegaDB
     if dataset
       left_count = dataset[left] || 0
       right_count = dataset[right] || 0
-      return left_count >= right_count ? left : right
+      return left_count > right_count ? left : right
     end
   end
 

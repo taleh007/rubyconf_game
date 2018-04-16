@@ -12,15 +12,27 @@ require_relative 'gamer'
 #  string :left
 #  string :right
 
+begin
+  gamer = Gamer.new('****', '****')
+  gamer.sign_in
+  binding.pry
 
-gamer = Gamer.new('***', '***')
-gamer.sign_in
+  gamer.start_play
 
-gamer.start_play
+  gamer.playing!
+  puts "Finish"
 
-gamer.play_one_game
+  binding.pry
 
-binding.pry
+  puts 'Total count = ' + gamer.tasks.count
+  puts 'Exit'
+rescue Exception => e
+  puts "Error"
+  binding.pry
+  puts 'Exit'
+end
 
-puts 'Total count = ' + gamer.tasks.count
-puts 'Exit'
+trap "SIGINT" do
+  binding.pry
+  puts 'Exit'
+end
