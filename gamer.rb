@@ -5,8 +5,13 @@ require_relative 'mega_db'
 
 class Gamer
   TIME_FOR_LOADING = 3.5
-
   attr_reader :browser, :tasks, :db
+
+  class << self
+    def mega
+      @@mega_db
+    end
+  end
 
   def initialize(login, password)
     @login = login
@@ -110,11 +115,14 @@ class Gamer
         })
       end
       puts "From gamer info --> task saved"
+      puts "From gamer info --> id:     #{task_id}\n" +
+           "                     our:   #{answer}\n" +
+           "                     their: #{task[:answer]}"
     else
       puts "From gamer info --> no answer for saving"
     end
 
-    puts "From gamer info --> tasks count is #{@tasks.count}"
+    puts "From gamer info --> tasks count is #{@tasks.count}\n\n"
     pause
   end
 
