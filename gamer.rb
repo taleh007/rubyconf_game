@@ -4,7 +4,7 @@ Bundler.require(:default)
 require_relative 'mega_db'
 
 class Gamer
-  TIME_FOR_LOADING = 3.5
+  TIME_FOR_LOADING = 2.7
   attr_reader :browser, :tasks, :db
 
   class << self
@@ -71,7 +71,7 @@ class Gamer
       end
     scope = @tasks.where(title: title)
 
-    if (one_scope = scope.where(left: left, right: right).or(left: right, right: left)).count.positive?
+    if (one_scope = scope.where(left: left, right: right)).count.positive? || (one_scope = scope.where(left: right, right: left)).count.positive?
       answer = one_scope.all.last[:answer]
       puts "From gamer info --> already have that task"
     elsif (answer = @@mega_db.compare(title, left, right))
@@ -90,9 +90,10 @@ class Gamer
       end
     else
       rand(0..1) > 0 ? left_btn.click() : right_btn.click()
+      puts "From gamer info --> NEW TITLE MOTHERFUCKER"
     end
 
-    pause
+    sleep(1.5)
 
     task[:title]   = title
     task[:speaker] = speaker
@@ -123,7 +124,6 @@ class Gamer
     end
 
     puts "From gamer info --> tasks count is #{@tasks.count}\n\n"
-    pause
   end
 
   private
