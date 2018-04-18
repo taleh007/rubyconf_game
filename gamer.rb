@@ -2,9 +2,16 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 require_relative 'mega_db'
+require 'rgl/adjacency'
+require 'rgl/transitivity'
 
 class Gamer
-  TIME_FOR_LOADING = 2.7
+  TIME_FOR_LOADING = 1.3
+  COPY_COUNTER = ->(key, hash) do
+    hash[key] ||= 0
+    hash[key] += 1
+  end
+
   attr_reader :browser, :tasks, :db
 
   class << self
@@ -69,11 +76,16 @@ class Gamer
       comment_body.text.split("\n").each do |x|
         x.slice!(/(When: )|(Speaker: )/)
       end
-    scope = @tasks.where(title: title)
+    scope = @tasks.where(title: title, speaker: speaker, year: year)
+    graph = RGL::DirectedAdjacencyGraph[*graph_params(scope)].transitive_closure
 
     if (one_scope = scope.where(left: left, right: right)).count.positive? || (one_scope = scope.where(left: right, right: left)).count.positive?
       answer = one_scope.all.last[:answer]
       puts "From gamer info --> already have that task"
+    elsif (is_left = graph.has_edge?(left, right)) || (is_right = graph.has_edge?(right, left))
+      answer = left if is_left
+      answer = right if is_right
+      puts "From gamer info --> GRAPH choose answer"
     elsif (answer = @@mega_db.compare(title, left, right))
       puts "From gamer info --> mega_db choose answer"
     elsif (answer = scope.map(:answer).include?(left) ? left : nil)
@@ -116,9 +128,9 @@ class Gamer
         })
       end
       puts "From gamer info --> task saved"
-      puts "From gamer info --> id:     #{task_id}\n" +
-           "                     our:   #{answer}\n" +
-           "                     their: #{task[:answer]}"
+      puts "From gamer info --> id:    #{task_id}\n" +
+           "                    our:   #{answer}\n" +
+           "                    their: #{task[:answer]}"
     else
       puts "From gamer info --> no answer for saving"
     end
@@ -158,5 +170,33 @@ class Gamer
 
   def pause
     sleep(TIME_FOR_LOADING)
+  end
+
+  def win_rate_more_than(e)
+    th = @tasks.map(:title).each_with_object({}, &COPY_COUNTER)
+    eh = @errors.map(:title).each_with_object({}, &COPY_COUNTER)
+    th.each_with_object([]) do |(k, v), h|
+      h << [k, (v - (eh[k]||0)).to_f / (v), v, eh[k]]
+    end.sort_by{ |x| -x[1] }.select{ |x| (x[1] || 0) > e }.map { |x| x.first }
+  end
+
+  def errors_less_than(e)
+    th = @tasks.map(:title).each_with_object({}, &COPY_COUNTER)
+    eh = @errors.map(:title).each_with_object({}, &COPY_COUNTER)
+    th.each_with_object([]) do |(k, v), h|
+      h << [k, (v - (eh[k]||0)).to_f / (v), v, eh[k]]
+    end.sort_by{ |x| -x[1] }.select{ |x| (x[-1] || 0) < e }.map { |x| x.first }
+  end
+
+  def graph_params(scope)
+    scope.order(Sequel.desc(:id))
+         .select(:answer, :left, :right)
+         .map([:answer, :left, :right])
+         .lazy
+         .map { |x| a = x.shift; x.sort.unshift(a) }
+         .map(&:uniq)
+         .uniq{ |x| x.sort }
+         .flat_map(&:itself)
+         .force
   end
 end
