@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
 require_relative 'gamer'
+require_relative 'hacker'
 # Scheme
 #
 #  primary_key :id
