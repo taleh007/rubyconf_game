@@ -11,7 +11,6 @@ class Hacker < Gamer
   MIN_WIN_RATE = 0.96
   MAX_ERRORS = 12
 
-
   def playing!
     play
 

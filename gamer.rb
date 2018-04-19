@@ -195,7 +195,7 @@ class Gamer
          .lazy
          .map { |x| a = x.shift; x.sort.unshift(a) }
          .map(&:uniq)
-         .uniq{ |x| x.sort }
+         .uniq { |x| x.sort }
          .flat_map(&:itself)
          .force
   end
