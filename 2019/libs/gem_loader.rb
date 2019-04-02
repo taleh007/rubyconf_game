@@ -11,7 +11,7 @@ Dir.chdir('./gemdata') do
     memo[name] = true unless name =~ %r/\.gem$/
   end
 
-  gem_names.first(100).each do |gem_name|
+  gem_names.each do |gem_name|
     if dirs[gem_name]
       puts "GEM '#{gem_name}' already exist'"
       next
