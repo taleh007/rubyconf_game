@@ -24,3 +24,10 @@ class RubyConfBot
     browser.input(type: 'submit').click
   end
 end
+
+config = YAML.load_file('config/secrets.yml')
+
+login = config['credentials']['github']['login']
+password = config['credentials']['github']['password']
+
+bot = RubyConfBot.new(login, password)
