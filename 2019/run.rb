@@ -157,12 +157,13 @@ class RubyConfBot
     btn = if current_level < 3
       random_button
     else
-      btn = left_button
+      left_button
     end
 
     task.our = btn.text
     btn.click
     task.save
+
     while !answer_button.exist? && !try_again_button.exist?
       sleep(0.1)
     end
