@@ -51,7 +51,7 @@ class Task < Struct.new(:id, :title, :answer, :our, :left, :right, :timestamp, :
 end
 
 module RubyConfHTMLHelper
-  TIME_FOR_LOADING = 1
+  TIME_FOR_LOADING = 0.3
 
   def start_button
     browser.element(class: 'welcome-button')
