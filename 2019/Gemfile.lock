@@ -3,19 +3,8 @@ GEM
   specs:
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
-    coderay (1.1.2)
     ffi (1.10.0)
     lazy_priority_queue (0.1.1)
-    method_source (0.8.2)
-    pry (0.10.4)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-    pry-nav (0.2.4)
-      pry (>= 0.9.10, < 0.11.0)
-    pry-remote (0.1.8)
-      pry (~> 0.9)
-      slop (~> 3.0)
     regexp_parser (1.4.0)
     rgl (0.5.4)
       lazy_priority_queue (~> 0.1.0)
@@ -24,8 +13,7 @@ GEM
     selenium-webdriver (3.141.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2, >= 1.2.2)
-    sequel (5.18.0)
-    slop (3.6.0)
+    sequel (5.19.0)
     sqlite3 (1.4.0)
     stream (0.5.2)
     watir (6.16.5)
@@ -36,9 +24,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  pry
-  pry-nav
-  pry-remote
   rgl
   sequel
   sqlite3

@@ -51,7 +51,7 @@ class Task < Struct.new(:id, :title, :answer, :our, :left, :right, :timestamp, :
 end
 
 module RubyConfHTMLHelper
-  TIME_FOR_LOADING = 0.3
+  TIME_FOR_LOADING = 0.55
 
   def start_button
     browser.element(class: 'welcome-button')
@@ -123,7 +123,7 @@ class RubyConfBot
     enumerator = number_of_actions.nil? ? loop : number_of_actions.times
 
     enumerator.each do
-      return if try_again_button.exist?
+      # return if try_again_button.exist?
 
       action
 
@@ -132,11 +132,14 @@ class RubyConfBot
   end
 
   def action
-    start_button.click if start_button.exist?
-    next_button.click if next_button.exist?
-    try_again_button.click if try_again_button.exist?
-
-    if [left_button, right_button].all?(&:exist?)
+    case
+    when start_button.exist?
+      start_button.click
+    when next_button.exist?
+      next_button.click
+    when try_again_button.exist?
+      try_again_button.click
+    when [left_button, right_button].all?(&:exist?)
       resolve_answer
     end
   end
@@ -155,7 +158,20 @@ class RubyConfBot
     task.save
 
     btn = if current_level < 3
-      random_button
+      search_scope = Task.db.where(title: task.title)
+      search_scope = search_scope.where(Sequel[:session_id] != current_session_id)
+      if (exist_scope = search_scope.where(left: task.left, right: task.right)).count.positive? || (exist_scope = search_scope.where(left: task.right, right: task.left)).count.positive?
+        case exist_scope.order(:session_id).last[:answer]
+        when task.left
+          left_button
+        when task.right
+          right_button
+        else
+          random_button
+        end
+      else
+        random_button
+      end
     else
       left_button
     end
@@ -189,3 +205,7 @@ login = config['credentials']['github']['login']
 password = config['credentials']['github']['password']
 
 bot = RubyConfBot.new(login, password)
+
+bot.start
+
+puts 'Final' # :)
